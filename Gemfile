@@ -7,7 +7,6 @@ ruby RUBY_VERSION
 DECIDIM_VERSION = { git: "https://github.com/CodiTramuntana/decidim.git", branch: "release/0.24-stable" }.freeze
 
 gem "daemons"
-gem "delayed_job_active_record"
 gem "puma"
 gem "uglifier", ">= 1.3.0"
 gem "whenever"
@@ -32,4 +31,8 @@ group :development do
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
   gem "web-console"
+end
+
+group :production do
+  gem "sidekiq"
 end
