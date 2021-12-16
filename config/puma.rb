@@ -15,7 +15,6 @@ rackup DefaultRackup
 port ENV["PORT"] || 3000
 env = ENV["RACK_ENV"] || ENV["RAILS_ENV"] || :staging || :production
 environment env
-daemonize [:production, :staging, :integration].include?(env.to_sym)
 
 on_worker_boot do
   # Worker specific setup for Rails 4.1+
