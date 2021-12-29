@@ -18,7 +18,6 @@ group :production do
   gem "sidekiq"
   gem "rails_12factor"
   gem "fog-aws"
-  gem "dalli"
   gem "rack-ssl-enforcer"
 end
 
