@@ -46,6 +46,3 @@ jobs:
 
       - name: Rubocop
         run: bundle exec rubocop -P
-
-      - name: Erb linter
-        run: bundle exec erblint app/views/**/*.erb
