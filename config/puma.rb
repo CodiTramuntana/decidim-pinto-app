@@ -12,6 +12,7 @@ preload_app!
 rackup DefaultRackup
 port ENV["PORT"] || 3000
 env = ENV["RACK_ENV"] || ENV["RAILS_ENV"] || :production
+
 environment env
 
 on_worker_boot do

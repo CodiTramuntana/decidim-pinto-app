@@ -31,6 +31,7 @@ jobs:
       DB_USERNAME: postgres
       DB_PASSWORD: postgres
       DB_HOST: localhost
+      SECRET_KEY_BASE: "secret_key_base"
 
     steps:
       - uses: actions/checkout@v2.0.0
