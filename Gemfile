@@ -6,15 +6,20 @@ ruby RUBY_VERSION
 
 DECIDIM_VERSION = { git: "https://github.com/CodiTramuntana/decidim.git", branch: "release/0.24-stable" }.freeze
 
-gem "daemons"
 gem "puma"
 gem "uglifier", ">= 1.3.0"
-gem "whenever"
 
 gem "figaro", ">= 1.1.1"
 gem "openssl"
 
 gem "decidim", DECIDIM_VERSION
+
+group :production do
+  gem "fog-aws"
+  gem "rack-ssl-enforcer"
+  gem "rails_12factor"
+  gem "sidekiq"
+end
 
 group :development, :test do
   gem "better_errors"
@@ -31,8 +36,4 @@ group :development do
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
   gem "web-console"
-end
-
-group :production do
-  gem "sidekiq"
 end
