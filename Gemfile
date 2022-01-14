@@ -15,10 +15,10 @@ gem "openssl"
 gem "decidim", DECIDIM_VERSION
 
 group :production do
-  gem "sidekiq"
-  gem "rails_12factor"
   gem "fog-aws"
   gem "rack-ssl-enforcer"
+  gem "rails_12factor"
+  gem "sidekiq"
 end
 
 group :development, :test do
@@ -36,8 +36,4 @@ group :development do
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
   gem "web-console"
-end
-
-group :production do
-  gem "sidekiq"
 end
