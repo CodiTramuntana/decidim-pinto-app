@@ -21,21 +21,14 @@ gem "faker"
 # gem "delayed_job_active_record"
 # gem "whenever"
 # elsif deploying to Heroku
-gem "sidekiq"
 gem "redis"
+gem "sidekiq"
 group :production do
-  gem "rails_12factor"
   gem "fog-aws"
   gem "rack-ssl-enforcer"
+  gem "rails_12factor"
 end
 # endif
-
-group :production do
-  gem "fog-aws"
-  gem "rack-ssl-enforcer"
-  gem "rails_12factor"
-  gem "sidekiq"
-end
 
 group :development, :test do
   gem "better_errors"
@@ -43,7 +36,6 @@ group :development, :test do
   gem "bootsnap"
   gem "byebug", platform: :mri
   gem "decidim-dev", DECIDIM_VERSION
-  gem "faker"
 end
 
 group :development do
