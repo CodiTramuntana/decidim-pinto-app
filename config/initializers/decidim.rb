@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 Decidim.configure do |config|
-  config.application_name = "Decidim Clean APP"
+  config.application_name = "Decidim Pinto APP"
 
-  config.mailer_sender = "decidim@decideix.com"
+  config.mailer_sender = Rails.application.secrets.smtp_username
 
   # Change these lines to set your preferred locales
   config.default_locale = :es

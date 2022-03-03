@@ -1,0 +1,6 @@
+[qgtunnel.correo-ayto-pinto-es]
+accept = "127.0.0.1:1587"
+connect = "correo.ayto-pinto.es:587"
+encrypted = false
+transparent = true
+
