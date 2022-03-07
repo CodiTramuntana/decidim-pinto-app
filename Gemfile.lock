@@ -1,4 +1,13 @@
 GIT
+  remote: https://github.com/CodiTramuntana/decidim-file_authorization_handler.git
+  revision: bbefc2b6edf73bb15011f2fbc36bd4213a71d274
+  specs:
+    decidim-file_authorization_handler (0.25.2)
+      decidim (~> 0.25.2)
+      decidim-admin (~> 0.25.2)
+      rails (>= 5.2)
+
+GIT
   remote: https://github.com/CodiTramuntana/decidim.git
   revision: 47a8b46d00138126036de1a4fcf0c2bde45f275c
   branch: release/0.25-stable
@@ -808,6 +817,7 @@ DEPENDENCIES
   byebug
   decidim!
   decidim-dev!
+  decidim-file_authorization_handler!
   faker
   figaro (>= 1.1.1)
   fog-aws
