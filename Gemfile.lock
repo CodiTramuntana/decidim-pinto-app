@@ -192,6 +192,14 @@ GIT
     decidim-age_action_authorization (0.24.0)
       decidim (>= 0.24.0)
 
+GIT
+  remote: https://github.com/mainio/decidim-module-term_customizer
+  revision: 437042198ed04cdd5582b29d5df83b032ecc518f
+  specs:
+    decidim-term_customizer (0.25.0)
+      decidim-admin (~> 0.25.0)
+      decidim-core (~> 0.25.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -834,6 +842,7 @@ DEPENDENCIES
   decidim-decidim_awesome
   decidim-dev!
   decidim-file_authorization_handler!
+  decidim-term_customizer!
   faker
   figaro (>= 1.1.1)
   fog-aws
