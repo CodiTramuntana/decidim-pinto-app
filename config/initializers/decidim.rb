@@ -23,3 +23,12 @@ Decidim.register_assets_path File.expand_path("app/packs", Rails.application.roo
 
 Rails.application.config.i18n.available_locales = Decidim.available_locales
 Rails.application.config.i18n.default_locale = Decidim.default_locale
+
+Decidim::Verifications.register_workflow(:file_authorization_handler) do |workflow|
+  workflow.form = "FileAuthorizationHandler"
+  workflow.action_authorizer = "Decidim::AgeActionAuthorization::Authorizer"
+  workflow.options do |options|
+    options.attribute :age, type: :string, required: false
+    options.attribute :max_age, type: :string, required: false
+  end
+end
