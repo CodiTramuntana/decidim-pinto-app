@@ -10,6 +10,7 @@ gem "decidim", DECIDIM_VERSION
 gem "decidim-age_action_authorization", git: "https://github.com/diputacioBCN/decidim-diba.git", glob: "decidim-age_action_authorization/*.gemspec"
 gem "decidim-decidim_awesome"
 gem "decidim-file_authorization_handler", git: "https://github.com/CodiTramuntana/decidim-file_authorization_handler.git"
+gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer"
 
 gem "puma"
 gem "uglifier", ">= 1.3.0"
