@@ -15,6 +15,10 @@
 
 /node_modules
 /yarn-error.log
+/public/packs
+/public/packs-test
+yarn-debug.log*
+.yarn-integrity
 
 .byebug_history
 .rspec-failures
@@ -30,15 +34,4 @@ public/uploads
 
 spec/decidim_dummy_app
 
-/public/packs
-/public/packs-test
 /public/decidim-packs
-yarn-debug.log*
-.yarn-integrity
-
-/public/packs
-/public/packs-test
-/node_modules
-/yarn-error.log
-yarn-debug.log*
-.yarn-integrity
