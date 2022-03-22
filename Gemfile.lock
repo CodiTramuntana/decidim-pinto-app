@@ -184,6 +184,14 @@ GIT
     decidim-verifications (0.25.2)
       decidim-core (= 0.25.2)
 
+GIT
+  remote: https://github.com/diputacioBCN/decidim-diba.git
+  revision: 4f83e1b291a5e952046666172c2fe840af72bbc9
+  glob: decidim-age_action_authorization/*.gemspec
+  specs:
+    decidim-age_action_authorization (0.24.0)
+      decidim (>= 0.24.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -816,6 +824,7 @@ DEPENDENCIES
   bootsnap
   byebug
   decidim!
+  decidim-age_action_authorization!
   decidim-dev!
   decidim-file_authorization_handler!
   faker

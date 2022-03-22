@@ -30,4 +30,9 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  decidim:
+    authorization_handlers:
+      file_authorization_handler:
+        fields:
+          age: Minimum age
+          max_age: Maximum age
