@@ -18,9 +18,8 @@ gem "webpacker"
 
 gem "figaro", ">= 1.1.1"
 gem "openssl"
-# For seeds
-gem "faker"
 
+gem "aws-sdk-s3", require: false
 # if deploying to a dedicated server
 # gem "daemons"
 # gem "delayed_job_active_record"
@@ -41,6 +40,7 @@ group :development, :test do
   gem "bootsnap"
   gem "byebug", platform: :mri
   gem "decidim-dev", DECIDIM_VERSION
+  gem "faker"
 end
 
 group :development do
