@@ -15,6 +15,7 @@ gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-te
 gem "puma"
 gem "uglifier", ">= 1.3.0"
 gem "webpacker"
+gem "wicked_pdf"
 
 gem "figaro", ">= 1.1.1"
 gem "openssl"
