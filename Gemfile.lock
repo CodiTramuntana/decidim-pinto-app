@@ -372,7 +372,12 @@ GEM
       activesupport (>= 4.0, < 7)
       rspec (~> 3.0)
     debug_inspector (1.1.0)
-    decidim-decidim_awesome (0.8.3)
+    decidim-conferences (0.25.2)
+      decidim-core (= 0.25.2)
+      decidim-meetings (= 0.25.2)
+      wicked_pdf (~> 2.1)
+      wkhtmltopdf-binary (~> 0.12)
+    decidim-decidim_awesome (0.8.1)
       decidim-admin (>= 0.25.0, < 0.27)
       decidim-core (>= 0.25.0, < 0.27)
       sassc (~> 2.3)
@@ -857,6 +862,7 @@ DEPENDENCIES
   byebug
   decidim!
   decidim-age_action_authorization!
+  decidim-conferences
   decidim-decidim_awesome
   decidim-dev!
   decidim-file_authorization_handler!
