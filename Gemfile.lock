@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/CodiTramuntana/decidim.git
-  revision: ef46e98ccad410cf805863dec3bb5348000ff58f
+  revision: a01302d84485b3c0ad473869b154e000b10b2129
   branch: release/0.25-stable
   specs:
     decidim (0.25.2)
@@ -890,4 +890,4 @@ RUBY VERSION
    ruby 2.7.5p203
 
 BUNDLED WITH
-   2.3.4
+   2.3.6
