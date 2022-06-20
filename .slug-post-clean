@@ -1,7 +1,6 @@
 node_modules
-/app/vendor/bundle/ruby/2.7.0/gems/wkhtmltopdf-binary-*/bin/wkhtmltopdf_macos_cocoa.gz
-/app/vendor/bundle/ruby/2.7.0/gems/wkhtmltopdf-binary-*/bin/wkhtmltopdf_ubuntu_1*
-/app/vendor/bundle/ruby/2.7.0/gems/wkhtmltopdf-binary-*/bin/wkhtmltopdf_archlinux*
-/app/vendor/bundle/ruby/2.7.0/gems/wkhtmltopdf-binary-*/bin/wkhtmltopdf_centos*
-/app/vendor/bundle/ruby/2.7.0/gems/wkhtmltopdf-binary-*/bin/wkhtmltopdf_debian
-
+vendor/bundle/ruby/2.7.0/gems/wkhtmltopdf-binary-*/bin/wkhtmltopdf_macos_cocoa.gz
+vendor/bundle/ruby/2.7.0/gems/wkhtmltopdf-binary-*/bin/wkhtmltopdf_ubuntu_1*
+vendor/bundle/ruby/2.7.0/gems/wkhtmltopdf-binary-*/bin/wkhtmltopdf_archlinux*
+vendor/bundle/ruby/2.7.0/gems/wkhtmltopdf-binary-*/bin/wkhtmltopdf_centos*
+vendor/bundle/ruby/2.7.0/gems/wkhtmltopdf-binary-*/bin/wkhtmltopdf_debian
