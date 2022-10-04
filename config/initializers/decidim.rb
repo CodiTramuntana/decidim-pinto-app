@@ -3,7 +3,7 @@
 Decidim.configure do |config|
   config.application_name = "Decidim Pinto APP"
 
-  config.mailer_sender = Rails.application.secrets.smtp_from
+  config.mailer_sender = Rails.application.secrets.smtp_username
 
   # Change these lines to set your preferred locales
   config.default_locale = :es
