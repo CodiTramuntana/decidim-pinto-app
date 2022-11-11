@@ -76,7 +76,7 @@ Rails.application.configure do
     address: Rails.application.secrets.smtp_address,
     port: Rails.application.secrets.smtp_port,
     authentication: Rails.application.secrets.smtp_authentication,
-    user_name: Rails.application.secrets.smtp_username,
+    user_name: Rails.application.secrets.smtp_authentication_username,
     password: Rails.application.secrets.smtp_password,
     domain: Rails.application.secrets.smtp_domain,
     enable_starttls_auto: Rails.application.secrets.smtp_starttls_auto,
