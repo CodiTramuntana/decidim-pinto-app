@@ -375,6 +375,10 @@ GEM
       decidim-meetings (= 0.26.3)
       wicked_pdf (~> 2.1)
       wkhtmltopdf-binary (~> 0.12)
+    decidim-consultations (0.26.3)
+      decidim-admin (= 0.26.3)
+      decidim-comments (= 0.26.3)
+      decidim-core (= 0.26.3)
     decidim-decidim_awesome (0.8.3)
       decidim-admin (>= 0.25.0, < 0.27)
       decidim-core (>= 0.25.0, < 0.27)
@@ -851,6 +855,7 @@ DEPENDENCIES
   decidim!
   decidim-age_action_authorization!
   decidim-conferences
+  decidim-consultations
   decidim-decidim_awesome
   decidim-dev!
   decidim-file_authorization_handler!
