@@ -9,6 +9,7 @@ DECIDIM_VERSION = { git: "https://github.com/CodiTramuntana/decidim.git", branch
 gem "decidim", DECIDIM_VERSION
 gem "decidim-age_action_authorization", git: "https://github.com/diputacioBCN/decidim-diba.git", glob: "decidim-age_action_authorization/*.gemspec"
 gem "decidim-conferences"
+gem "decidim-consultations"
 gem "decidim-decidim_awesome"
 gem "decidim-file_authorization_handler", git: "https://github.com/CodiTramuntana/decidim-file_authorization_handler.git", tag: "v0.26.2.3"
 gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: "release/0.26-stable"
