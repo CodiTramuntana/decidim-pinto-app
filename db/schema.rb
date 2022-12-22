@@ -2,19 +2,18 @@
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
 #
-# This file is the source Rails uses to define your schema when running `rails
-# db:schema:load`. When creating a new database, `rails db:schema:load` tends to
+# This file is the source Rails uses to define your schema when running `bin/rails
+# db:schema:load`. When creating a new database, `bin/rails db:schema:load` tends to
 # be faster and is potentially less error prone than running all of your
 # migrations from scratch. Old migrations may fail to apply correctly if those
 # migrations use external dependencies or application code.
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_11_21_131090) do
+ActiveRecord::Schema.define(version: 2022_12_22_094155) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
-  enable_extension "pg_stat_statements"
   enable_extension "pg_trgm"
   enable_extension "plpgsql"
 
@@ -798,6 +797,7 @@ ActiveRecord::Schema.define(version: 2022_11_21_131090) do
     t.string "id_document"
     t.date "birthdate"
     t.datetime "created_at", null: false
+    t.jsonb "extras"
     t.index ["decidim_organization_id"], name: "decidim_census_data_org_id_index"
   end
 
