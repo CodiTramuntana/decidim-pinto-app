@@ -11,8 +11,7 @@ gem "decidim-age_action_authorization", git: "https://github.com/diputacioBCN/de
 gem "decidim-conferences"
 gem "decidim-consultations"
 # gem "decidim-decidim_awesome"
-gem "decidim-file_authorization_handler", path: "/home/oliver/prog/decidim/modules/decidim-file_authorization_handler-codit"
-# gem "decidim-file_authorization_handler", git: "https://github.com/CodiTramuntana/decidim-file_authorization_handler.git", tag: "v0.26.2.3"
+gem "decidim-file_authorization_handler", git: "https://github.com/CodiTramuntana/decidim-file_authorization_handler.git", tag: "v0.27.1.0"
 gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: "master"
 
 # temporal solution while gems embrace new psych 4 (the default in Ruby 3.1) behavior.

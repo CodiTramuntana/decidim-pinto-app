@@ -1,4 +1,14 @@
 GIT
+  remote: https://github.com/CodiTramuntana/decidim-file_authorization_handler.git
+  revision: b260fb874cac4b79aca0a41245399ec1618c0a9d
+  tag: v0.27.1.0
+  specs:
+    decidim-file_authorization_handler (0.27.1.0)
+      decidim (~> 0.27.1)
+      decidim-admin (~> 0.27.1)
+      rails (>= 5.2)
+
+GIT
   remote: https://github.com/CodiTramuntana/decidim.git
   revision: 29ab375d0a86a530d2aa4c7940c55f6c509c652b
   branch: release/0.27-stable
@@ -187,14 +197,6 @@ GIT
     decidim-term_customizer (0.27.0)
       decidim-admin (~> 0.27.0)
       decidim-core (~> 0.27.0)
-
-PATH
-  remote: /home/oliver/prog/decidim/modules/decidim-file_authorization_handler-codit
-  specs:
-    decidim-file_authorization_handler (0.27.1.0)
-      decidim (~> 0.27.1)
-      decidim-admin (~> 0.27.1)
-      rails (>= 5.2)
 
 GEM
   remote: https://rubygems.org/
