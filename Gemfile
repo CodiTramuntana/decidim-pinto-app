@@ -15,7 +15,7 @@ gem "decidim-file_authorization_handler", git: "https://github.com/CodiTramuntan
 gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: "master"
 
 # temporal solution while gems embrace new psych 4 (the default in Ruby 3.1) behavior.
-gem 'psych', '< 4'
+gem "psych", "< 4"
 
 gem "puma"
 gem "uglifier", ">= 1.3.0"
@@ -55,7 +55,7 @@ end
 
 group :development do
   gem "letter_opener_web"
-  gem "listen"#, "~> 3.1.0"
+  gem "listen" # , "~> 3.1.0"
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
   gem "web-console"
