@@ -29,15 +29,15 @@ gem "openssl"
 # More exactly in comments in the homepage and in processes cards in the processes listing
 gem "nokogiri", "1.13.3"
 
-gem "aws-sdk-s3", require: false
 # if deploying to a dedicated server
 # gem "daemons"
 # gem "delayed_job_active_record"
 # gem "whenever"
-# elsif deploying to Heroku
+# elsif deploying to a PaaS like Heroku
 gem "redis"
 gem "sidekiq"
 group :production do
+  gem "aws-sdk-s3", require: false
   gem "fog-aws"
   gem "rack-ssl-enforcer"
   gem "rails_12factor"
@@ -55,7 +55,7 @@ end
 
 group :development do
   gem "letter_opener_web"
-  gem "listen" # , "~> 3.1.0"
+  gem "listen"
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
   gem "web-console"

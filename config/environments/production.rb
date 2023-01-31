@@ -76,12 +76,12 @@ Rails.application.configure do
     address: Rails.application.secrets.smtp_address,
     port: Rails.application.secrets.smtp_port,
     authentication: Rails.application.secrets.smtp_authentication,
-    user_name: Rails.application.secrets.smtp_authentication_username,
+    user_name: Rails.application.secrets.smtp_username,
     password: Rails.application.secrets.smtp_password,
     domain: Rails.application.secrets.smtp_domain,
     enable_starttls_auto: Rails.application.secrets.smtp_starttls_auto,
     openssl_verify_mode: "none",
-    ssl: false
+    ssl: true
   }
 
   if Rails.application.secrets.sendgrid
@@ -108,6 +108,6 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  # Store uploaded files on S3 (see config/storage.yml for options).
-  config.active_storage.service = :amazon
+  # Store files locally.
+  config.active_storage.service = :s3
 end

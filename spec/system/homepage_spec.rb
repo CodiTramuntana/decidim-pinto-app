@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "rails_helper"
+require "spec_helper"
 
 describe "Homepage", type: :system do
   include Decidim::SanitizeHelper
@@ -17,10 +17,8 @@ describe "Homepage", type: :system do
   let!(:sub_hero) { create :content_block, organization: organization, scope_name: :homepage, manifest_name: :sub_hero }
 
   before do
-    I18n.with_locale(:en) do
-      switch_to_host(organization.host)
-      visit decidim.root_path
-    end
+    switch_to_host(organization.host)
+    visit decidim.root_path(locale: I18n.locale)
   end
 
   it "loads and shows organization name and main blocks" do
