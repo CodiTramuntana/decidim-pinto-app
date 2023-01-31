@@ -1,4 +1,14 @@
 GIT
+  remote: https://github.com/CodiTramuntana/decidim-file_authorization_handler.git
+  revision: b260fb874cac4b79aca0a41245399ec1618c0a9d
+  tag: v0.27.1.0
+  specs:
+    decidim-file_authorization_handler (0.27.1.0)
+      decidim (~> 0.27.1)
+      decidim-admin (~> 0.27.1)
+      rails (>= 5.2)
+
+GIT
   remote: https://github.com/CodiTramuntana/decidim.git
   revision: 29ab375d0a86a530d2aa4c7940c55f6c509c652b
   branch: release/0.27-stable
@@ -49,6 +59,15 @@ GIT
     decidim-comments (0.27.1)
       decidim-core (= 0.27.1)
       redcarpet (~> 3.5, >= 3.5.1)
+    decidim-conferences (0.27.1)
+      decidim-core (= 0.27.1)
+      decidim-meetings (= 0.27.1)
+      wicked_pdf (~> 2.1)
+      wkhtmltopdf-binary (~> 0.12)
+    decidim-consultations (0.27.1)
+      decidim-admin (= 0.27.1)
+      decidim-comments (= 0.27.1)
+      decidim-core (= 0.27.1)
     decidim-core (0.27.1)
       active_link_to (~> 1.0)
       acts_as_list (~> 0.9)
@@ -170,6 +189,23 @@ GIT
       decidim-forms (= 0.27.1)
     decidim-verifications (0.27.1)
       decidim-core (= 0.27.1)
+
+GIT
+  remote: https://github.com/diputacioBCN/decidim-diba.git
+  revision: 7f8305454f0386a187152490dc1785afba7487bc
+  glob: decidim-age_action_authorization/*.gemspec
+  specs:
+    decidim-age_action_authorization (0.26.0)
+      decidim (>= 0.26.0)
+
+GIT
+  remote: https://github.com/mainio/decidim-module-term_customizer
+  revision: 5a8d4c67972ef10cd52e774d64a3c7cff9bc9325
+  branch: master
+  specs:
+    decidim-term_customizer (0.27.0)
+      decidim-admin (~> 0.27.0)
+      decidim-core (~> 0.27.0)
 
 GEM
   remote: https://rubygems.org/
@@ -547,7 +583,7 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.13.10)
+    nokogiri (1.13.3)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     oauth (1.1.0)
@@ -853,12 +889,18 @@ DEPENDENCIES
   bootsnap
   byebug
   decidim!
+  decidim-age_action_authorization!
+  decidim-conferences
+  decidim-consultations
   decidim-dev!
+  decidim-file_authorization_handler!
+  decidim-term_customizer!
   faker
   figaro (>= 1.1.1)
   fog-aws
   letter_opener_web
   listen
+  nokogiri (= 1.13.3)
   openssl
   psych (< 4)
   puma
@@ -871,6 +913,7 @@ DEPENDENCIES
   uglifier (>= 1.3.0)
   web-console
   webpacker
+  wicked_pdf
 
 RUBY VERSION
    ruby 3.1.3p185
