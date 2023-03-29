@@ -30,12 +30,12 @@ gem "openssl"
 gem "nokogiri", "1.13.3"
 
 # if deploying to a dedicated server
-# gem "daemons"
-# gem "delayed_job_active_record"
-# gem "whenever"
+gem "daemons"
+gem "delayed_job_active_record"
+gem "whenever"
 # elsif deploying to a PaaS like Heroku
-gem "redis"
-gem "sidekiq"
+# gem "redis"
+# gem "sidekiq"
 group :production do
   gem "aws-sdk-s3", require: false
   gem "fog-aws"
