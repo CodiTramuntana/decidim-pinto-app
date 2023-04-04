@@ -40,7 +40,6 @@ group :production do
   gem "aws-sdk-s3", require: false
   gem "fog-aws"
   gem "rack-ssl-enforcer"
-  gem "rails_12factor"
 end
 # endif
 
