@@ -69,8 +69,6 @@ Rails.application.configure do
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
 
-  # Use default logging formatter so that PID and timestamp are not suppressed.
-  config.log_formatter = ::Logger::Formatter.new
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: Rails.application.secrets.smtp_address,
@@ -80,8 +78,7 @@ Rails.application.configure do
     password: Rails.application.secrets.smtp_password,
     domain: Rails.application.secrets.smtp_domain,
     enable_starttls_auto: Rails.application.secrets.smtp_starttls_auto,
-    openssl_verify_mode: "none",
-    ssl: false
+    openssl_verify_mode: "none"
   }
 
   if Rails.application.secrets.sendgrid
@@ -95,6 +92,8 @@ Rails.application.configure do
     }
   end
 
+  # Use default logging formatter so that PID and timestamp are not suppressed.
+  config.log_formatter = ::Logger::Formatter.new
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
