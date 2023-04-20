@@ -2,6 +2,14 @@
 
 env :PATH, ENV.fetch("PATH", nil)
 
+every 1.day, at: "3:00 am" do
+  rake "decidim_meetings:clean_registration_forms"
+end
+
+every 1.day, at: "4:00 am" do
+  rake "decidim:reminders:all"
+end
+
 every 1.day, at: "5:00 am" do
   rake "decidim:metrics:all"
 end
